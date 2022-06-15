@@ -1,0 +1,307 @@
+
+* {
+    box-sizing: border-box;
+   
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+
+/* font color*/
+body {
+color:grey;
+}
+/* style for section one*/
+.section-one{
+    width:400px;
+    border:none;
+    padding: 10px;
+    color:white;
+    background-color:#6e0e0e;
+    border-radius: 11px ;
+    font-family: 'Montserrat', sans-serif;
+}
+/* style for buttons in section one*/
+.section-one button {
+    padding:8px;
+    width:150px;
+    border:none;
+    border-radius:15px;
+    background-color: pink;
+    color:black;
+}
+.section-one button:hover {
+    padding:9px;
+    border-radius:15px;
+    background-color: indianred;
+    color:#fff;
+    opacity:0.6;
+}
+
+.message{
+    margin-left: 30px;
+}
+.section-two img{
+    border: 1px solid black;
+    border-radius:75px;
+}
+#second{
+    width:400px;
+    border:1px solid #fff;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 20px 15px;
+    margin-top:25px;
+}
+.section-three{
+    border:none;
+    border-radius:15px;
+    font-size: 20px;
+    color: #fff;
+    background-color:indianred;
+    border-radius:15px;
+    padding: 10px;
+}
+.section-three button{
+    width:100px;
+    padding: 10px;
+    margin-left:50px;
+    border-radius:15px;
+    color: #fff;
+    cursor: pointer;
+    background-color:#de4646;
+    border:none;
+}
+.section-three img{
+    float:left;
+}
+.section-four{
+  width:300px;
+  margin-top: 30px;
+  padding:10px;
+}
+#date-select{
+  display:none;
+}
+#instruction{
+  border:none;
+  width: 280px;
+  background-color: brown;
+  color: #fff;
+  padding: 8px;
+}
+
+
+
+
+#submit{
+    padding: 10px;
+    color:#c76f7d;
+    font-size: 23px;
+    margin-top: 20px;;
+}
+#select{
+    width:200px;
+    height:50px;
+    border: none;
+    background: linear-gradient(to bottom, #c76f7d, #713636)
+}
+
+#month{
+  width:150px;
+  height:50px;
+  border: none;
+  background: linear-gradient(to bottom, #c76f7d, #713636)
+}
+
+/****** Styling for checker html ******/
+#checker-img{
+    border: 1px solid pink;
+    border-radius:100%;
+    width: 300px;
+  }
+ 
+
+.wrapper{
+    border-radius: 25px;
+    padding: 20px 15px;
+    margin-top:25px;
+}
+
+.all-info{
+    
+    border:1px solid #6e0e0e;
+    background-color:#c76f7d;
+    border-radius: 25px;
+    padding: 20px 15px;
+    margin-top:25px; 
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+/************** Media queries ***********/
+        /****** Index.html ******/
+/* for large screen devices*/
+  @media only screen and (min-width: 1200px) {
+      .welcome{
+          margin-left: 50px;
+      }
+      .section-one{
+          margin-left: 50px;
+          width: 1500px;
+      }
+      .section-one button{
+          margin-left: 250px;
+      }
+      #second{
+          margin-left:50px;
+          width: 1500px;
+      }
+      /* change display to grid*/
+      .section-two{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+      }
+      /* increases the padding of the section */
+      .section-three{
+          padding: 30px 20px;
+      }
+      /* increases font size and moves the text to the right so it positions at the center of the section*/
+      .section-three p{
+        margin-left: 500px;
+        font-size: 30px;
+      }
+      /*pushes the button to the right to align with the text at the center*/
+      .section-three button{
+        margin-left: 100px;
+      }
+      /* increases the images*/
+      .section-three img{
+          width: 500;
+          height:600;
+          margin-left: 350px;
+      }
+  }
+/* media queries for tablets*/
+@media only screen and (min-width: 992px){
+    .section-one{
+        width: 1200px;
+    }
+    .section-one button{
+        margin-left: 250px;
+    }
+    #second{
+         width: 1200px;
+    }
+    .section-two{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(100px, auto);
+        gap: 15px;
+}
+ /* increases font size and moves the text to the right so it positions at the center of the section*/
+ .section-three p{
+    margin-left: 400px;
+    font-size: 30px;
+  }
+  .section-three button{
+    margin-left: 50px;
+  }
+  /* increases the images*/
+  .section-three img{
+      width: 500;
+      height:600;
+      margin-left: 250px;
+  }
+}
+/* media queries for mini tablets*/
+@media only screen and (min-width: 768px) {
+ .section-one{
+     width:1200px;
+ }
+ #second{
+     width:1200px;
+ }
+ .section-two{
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     grid-auto-rows: minmax(100px, auto);
+     gap: 15px;
+    
+ }
+}
+
+/********* Checker.html ***************/
+/* for large screen devices*/
+@media only screen and (min-width: 1200px) {
+ 
+    .section-five{
+        display: flex;
+    }
+
+ #checker-img{
+     width: 500px;
+     float : right;
+}
+.all-info{
+    height: 300px;
+}
+}
+
+@media only screen and (min-width: 992px){
+    .section-five{
+        display: flex;
+    }
+
+ #checker-img{
+     width: 500px;
+     float : right;
+}
+.all-info{
+    height: 300px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+.section-five{
+        display: flex;
+    }
+
+ #checker-img{
+     width: 500px;
+     float : right;
+}
+.all-info{
+    height: 300px;
+}
+}
+
+@media only screen and (max-width: 600px){
+    #checker-img{
+        margin-bottom: 20px;
+    }
+    .all-info{
+        height: 300px;
+    }
+}
